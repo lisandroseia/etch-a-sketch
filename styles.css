@@ -40,3 +40,16 @@ h1{
   transition: 0.6s;
 }
 
+.container{
+  margin: auto;
+  margin-bottom: 10px;
+  width: 550px;
+  height: 550px;
+  border: 1px solid rgb(212, 210, 210);
+  display: grid;
+}
+
+.square{
+  margin: 0px;
+  border: 1px solid lightgrey;
+}
