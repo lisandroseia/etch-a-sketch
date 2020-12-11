@@ -1,55 +1,66 @@
-*{   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: rgb(78, 76, 76);
+body{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
-  font-size: 50px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #1883ba;
-  margin-bottom: 20px;
-  padding: 25px;
+    font-size: 80px;
+     color: blanchedalmond;
+     font-weight: 600;
 }
 
-.btns{
-  text-align: center;
+.sliderAndValue{
+    border: 1px solid black;
+    display: inline-flex;
+    padding: 5px;
 }
 
-.btn{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  text-decoration: none;
-  padding: 10px;
-  font-weight: 600;
-  font-size: 20px;
-  color: #ffffff;
-  background-color: #1883ba;
-  border-radius: 6px;
-  border: 2px solid #0016b0;
+.colorAndPrompt{
+    display: inline-flex;
 }
 
-.btn:hover{
-  color: #1883ba;
-    background-color: #ffffff;
-    opacity: 
-    0.4;
-  transition: 0.6s;
+
+
+.grid{
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 575px;
+    width: 575px;
+    background-color: gray;
 }
 
-.container{
-  margin: auto;
-  margin-bottom: 10px;
-  width: 550px;
-  height: 550px;
-  border: 1px solid rgb(212, 210, 210);
-  display: grid;
+.cell{
+    background-color: white;
+    border: 1px solid black;
 }
 
-.square{
-  margin: 0px;
-  border: 1px solid lightgrey;
+a{text-decoration:none;color:#FFF}
+
+
+.rainbow-button{
+    width:calc(100px);
+    height:calc(60px);
+    background-image:linear-gradient(90deg,#00C0FF 0,#FFCF00 49%,#FC4F4F 80%,#00C0FF 100%);
+    border-radius:5px;
+    display:inline;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:20px;
+    font-weight:700
 }
+
+
+
+
+.rainbow-button:hover{
+    animation:slidebg 2s linear infinite
+}
+@keyframes slidebg{to{background-position:20vw}}

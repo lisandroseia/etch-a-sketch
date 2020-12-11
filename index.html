@@ -1,31 +1,31 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>etch a sketch</title>
-<link href="styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div class="header">
-    <h1>etch a sketch</h1>
-</div>
-
-<div class="btns">
-    <button class="btn" id="ClearGrid">Clear grid</button>
-    <button class="btn" id="ResizeGrid">Resize grid</button>
-    <button class="btn" id="Black">Black</button>
-    <button class="btn" id="Rainbow">Rainbow</button>
-    <button class="btn" id="pencil">Graydational</button>
-</div>
-
-<div id="container" class="container">
-    
-</div>
-
-
-
-
-
-<script src="scripts.js">
-
-</script>
+    <h1 id="title">Etch a Sketch</h1>
+    <div class="btns">
+        <button class="rainbow-button" alt="Rainbow" id="reset">Reset</button>
+        <button class="rainbow-button"  alt="Rainbow" id="black">Black</button>
+        <button  class="rainbow-button"  alt="Rainbow" id="rgb">RGB</button>
+        <br>
+        <div class="colorAndPrompt">
+            <input type="color" id="color">
+            <p>choose a color</p>
+        </div>
+        <br>
+        <div class="sliderAndValue">
+           
+            <input type="range" min="2" max="100" value="16" id="slider">
+            <p class="value">16</p>
+        </div>
+    </div>  
+    <div class="grid"></div>
+<script src="scripts.js"></script>
 </body>
+
+</html>
